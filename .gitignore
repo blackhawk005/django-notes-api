@@ -1,0 +1,9 @@
+# #ignoring migrations to remove problem faced created by individual developer
+**/migrations/**
+!**/migrations
+!**/migrations/__init__.py
+
+
+# Ignore virtual environments
+env/
+.env/
