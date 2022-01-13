@@ -25,7 +25,7 @@ SECRET_KEY = 'h$)0epph#eo!lhds3m0=y)%-e^qk*21dw=iy54v3fm(y81s1ij'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['django-flutter-notes.herokuapp.com']
 
 
 # Application definition
