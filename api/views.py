@@ -1,11 +1,7 @@
-from multiprocessing.spawn import old_main_modules
-from stat import S_IREAD
-from tkinter.messagebox import NO
 from django.shortcuts import render
 from django.http import JsonResponse, response
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
-from sqlalchemy import true
 from .serializers import NoteSerializer
 from .models import Note
 
