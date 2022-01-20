@@ -90,11 +90,8 @@ if DEBUG==True:
 elif DEBUG==False:
     DATABASES = {
         'default': {
-            'ENGINE': 'django.db.backends.mysql',
-            'NAME': os.environ.get('API_DB_NAME'),
-            'USER': os.environ.get('API_DB_USER'),
-            'PASSWORD': os.environ.get('API_DB_PASS'),
-            'HOST': os.environ.get('API_DB_HOST'),
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'host.sqlite3',
         }
     }
 
