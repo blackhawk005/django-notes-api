@@ -5,5 +5,7 @@
 
 
 # Ignore virtual environments
+host.sqlite3
+
 env/
 .env/
