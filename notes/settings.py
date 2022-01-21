@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'h$)0epph#eo!lhds3m0=y)%-e^qk*21dw=iy54v3fm(y81s1ij'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['django-flutter-notes.herokuapp.com']
 
@@ -90,8 +90,11 @@ if DEBUG==True:
 elif DEBUG==False:
     DATABASES = {
         'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'host.sqlite3',
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': os.environ.get('API_DB_NAME'),
+            'USER': os.environ.get('API_DB_USER'),
+            'PASSWORD': os.environ.get('API_DB_PASS'),
+            'HOST': os.environ.get('API_DB_HOST'),
         }
     }
 
